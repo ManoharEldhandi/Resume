@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 34, 34);
+    font-family: 'Space Grotesk', sans-serif;
+    color: rgb(187, 187, 187);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .Myname {
+    font-size: 26px;
+    color: rgb(238, 238, 238);
+    margin-bottom: 8px;
+    font-weight: normal;
+  }
+  .link {
+    font-size: 18px;
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+  }
+  
+  .portfolio-text {
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+  }
+  
+  .link:hover .portfolio-text {
+    border-bottom-color: rgb(187, 187, 187);
+  }
+  
+  .arrow {
+    font-size: 18px;
+    vertical-align: super;
+    margin-left: 2px;
+    position: relative;
+    top: 4px;
+  }
+  .section-title {
+    font-size: 20px;
+    color: rgb(238, 238, 238);
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-weight: normal;
+  }
+  
+  .section-content {
+    font-size: 18px;
+    color: rgb(187, 187, 187);
+    margin: 0;
+    font-weight: normal;
+  }
+
+  .entry {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 60px;
+  }
+  
+  .year {
+    font-size: 18px;
+    color: rgb(187, 187, 187);
+    min-width: 60px;
+    padding-top: 7px;
+  }
+  
+  .bullets {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  .bullets li {
+    font-size: 18px;
+    color: rgb(187, 187, 187);
+    margin-bottom: 1rem;
+  }
+  .name {
+    color: rgb(238, 238, 238);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+  }
+  
+  .link:hover .name {
+    border-bottom-color: rgb(187, 187, 187);
+  }
+  .location {
+    font-size: 1rem;
+    color: #aaa; /* or your preferred muted tone */
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+  .t-content {
+    font-size: 18px;
+    color: rgb(187, 187, 187);
+    margin: 0;
+    font-weight: normal;
+  }
+ 
+  .c1-entry {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 59px;
+  }
+  .c2-entry {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 70px;
+  }
+  .c3-entry {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 60px;
+  }
+  .c4-entry {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 70px;
+  }
