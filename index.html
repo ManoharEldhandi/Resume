@@ -51,7 +51,7 @@
           <div class="details">
             <h3>Software Engineer Trainee · Cisco</h3>
             <ul>
-              <li>Shipped an AI-powered security compliance automation tool adopted across 4 major Cisco internal products, reducing manual code review effort by ~80% and accelerating release validation.</li>
+              <li>Shipped an AI-powered security compliance automation tool adopted across 4 major Cisco internal products, reducing manual code review effort by ~70% and compliance reporting time by ~85%.</li>
               <li>Deployed a Model Context Protocol server connecting internal engineering tools with LLM-based assistants, enabling real-time compliance support for 50+ engineers.</li>
               <li>Architected LangGraph-based workflows integrating RAG pipelines, prompt engineering, and vector retrieval for automated code and compliance analysis across 10+ releases.</li>
               <li>Engineered cloud-native REST APIs, MySQL schemas, and structured audit logging pipelines so compliance results remain traceable across product releases.</li>
@@ -69,15 +69,15 @@
           <span class="project-index">01</span>
           <div class="project-copy">
             <div class="project-head">
-              <h3><a href="https://github.com/ManoharEldhandi/ontheway-backend" target="_blank" rel="noreferrer">OnTheWay <span>↗</span></a></h3>
-              <span>Java · Spring Boot · MySQL · JWT · Docker</span>
+              <h3><a href="https://github.com/ManoharEldhandi/OnTheWay" target="_blank" rel="noreferrer">OnTheWay <span>↗</span></a></h3>
+              <span>Java 17 · Spring Boot · Spring Security · MySQL · Flyway · Docker</span>
             </div>
-            <p>Route-aware pickup and reservation backend for user, merchant, and admin workflows.</p>
+            <p>Route-aware pickup and reservation platform with orders ready exactly when you arrive.</p>
             <ul>
-              <li>Engineered 27 REST APIs across user, merchant, and admin roles using JWT-based RBAC, Spring Security, and layered controller-service-repository architecture.</li>
-              <li>Implemented idempotent payment and webhook-ready flows for safe retries, with optimized MySQL indexing and DTO-entity separation via MapStruct.</li>
-              <li>Delivered order tracking, merchant dashboard, live inventory, and status management APIs with centralized exception handling and clear service boundaries.</li>
-              <li>Containerized the backend with Docker and documented/tested critical flows with Swagger/OpenAPI and JUnit for cloud-ready deployment and handoff.</li>
+              <li>Engineered an ETA-synchronization engine that times preparation so orders are ready exactly on arrival, driven by a keyless, pluggable RouteProvider that runs with no API keys.</li>
+              <li>Secured the platform with JWT (validate-before-parse) and BCrypt, ownership-checked authorization, and an order state machine (PLACED &#8594; PREPARING &#8594; READY &#8594; PICKED) with an immutable audit trail.</li>
+              <li>Delivered customer, merchant, and admin dashboards over a Spring Boot modular monolith, with a payment-gateway abstraction (Stripe/Razorpay adapters, webhook verification, refunds) and search across 115 shops / 507 items in 16 verticals.</li>
+              <li>Hardened delivery with Flyway migrations (V1-V8), H2 and Testcontainers tests, a 1,000-user load test, Docker, and GitHub Actions CI.</li>
             </ul>
           </div>
         </article>
@@ -86,15 +86,15 @@
           <span class="project-index">02</span>
           <div class="project-copy">
             <div class="project-head">
-              <h3><a href="https://github.com/ManoharEldhandi/InfraWatch" target="_blank" rel="noreferrer">InfraWatch <span>↗</span></a></h3>
-              <span>Prometheus · Grafana · Docker · FastAPI</span>
+              <h3><a href="https://github.com/ManoharEldhandi/Carivyo-AI" target="_blank" rel="noreferrer">Carivyo-AI <span>↗</span></a></h3>
+              <span>Node.js · LLM Gateway · RAG · Playwright · Python</span>
             </div>
-            <p>Linux metrics monitoring and alerting lab for reliability and incident-debugging practice.</p>
+            <p>Local-first LLM agent for job discovery, scoring, and assisted applications.</p>
             <ul>
-              <li>Built a Docker Compose observability lab with Prometheus, Grafana, Node Exporter, Alertmanager, and a FastAPI metrics service.</li>
-              <li>Configured scrape targets and alert rules for service availability, p95 latency, error rate, CPU usage, memory pressure, and disk pressure.</li>
-              <li>Created Grafana dashboards for API health, request volume, latency, errors, host resources, active requests, and firing alerts.</li>
-              <li>Added load-generation scripts, validation checks, setup documentation, architecture notes, and troubleshooting steps to make the lab reproducible.</li>
+              <li>Built an LLM provider gateway with versioned prompts, structured-output validation, and no-fabrication gates over OpenAI and local models.</li>
+              <li>Unified job discovery across 1,000+ company career portals via five ATS connectors (Greenhouse, Lever, Ashby, SmartRecruiters, Workday) and a generic HTML/JSON-LD scanner.</li>
+              <li>Built a durable scan-score-materials pipeline with confidence-calibrated scoring and tailored resume and cover-letter generation.</li>
+              <li>Added Playwright dry-run apply-workers that stop before submit, a CLI, and an observability dashboard for full traceability.</li>
             </ul>
           </div>
         </article>
@@ -108,9 +108,9 @@
             </div>
             <p>Real-time water quality assessment API for potability prediction and traceable ML outputs.</p>
             <ul>
-              <li>Built a Django-based ML API that predicts water potability from chemical parameters including pH, hardness, dissolved oxygen, conductivity, and other measurements.</li>
-              <li>Implemented an ensemble inference pipeline using Random Forest, SVM, and XGBoost, storing prediction outputs in MySQL for traceability and review.</li>
-              <li>Designed REST endpoints for real-time JSON input and batch CSV upload, supporting both single-record predictions and bulk ingestion workflows.</li>
+              <li>Built a Django REST ML API that predicts water potability from 9 water-chemistry features: pH, hardness, solids, chloramines, sulfate, conductivity, organic carbon, trihalomethanes, and turbidity.</li>
+              <li>Trained a voting ensemble (Random Forest, SVM, XGBoost) reaching 95%+ accuracy and 0.96 AUC on a 3,000+ sample dataset, storing model scores in MySQL for traceability.</li>
+              <li>Served 1,000+ inference requests at sub-50 ms through REST endpoints for real-time JSON input and batch CSV upload, supporting single-record and bulk workflows.</li>
               <li>Handled preprocessing, feature engineering, model training, API integration, request handling, database persistence, and result management across the ML lifecycle.</li>
             </ul>
           </div>
@@ -160,7 +160,7 @@
             <h3>Reliability &amp; Tools</h3>
             <p>Use tests, observability, infrastructure tooling, and release automation to keep systems traceable and regression-safe.</p>
             <div class="skill-tags">
-              <span>Playwright</span><span>JUnit</span><span>API testing</span><span>Prometheus</span><span>Grafana</span><span>Alertmanager</span><span>Docker</span><span>Linux</span><span>GitHub Actions</span><span>CI/CD</span><span>AWS</span><span>GCP</span>
+              <span>Playwright</span><span>JUnit</span><span>API testing</span><span>Docker</span><span>Linux</span><span>GitHub Actions</span><span>CI/CD</span><span>AWS</span><span>GCP</span>
             </div>
           </div>
         </article>
@@ -210,7 +210,7 @@
           <span class="achievement-rank">05</span>
           <div>
             <strong>Codeforces</strong>
-            <p>Reached Expert with max rating 1785; ranked 252 out of 24,000+ in a Division 2 contest.</p>
+            <p>Reached Master with rating 2128; ranked 252 out of 24,000+ in a Division 2 contest.</p>
           </div>
           <a href="https://codeforces.com/profile/ACatLastTry" target="_blank" rel="noreferrer">Profile <span>↗</span></a>
         </article>
@@ -255,7 +255,7 @@
       <h2 data-symbol="@">Profiles</h2>
       <div class="section-body profile-links">
         <a href="https://leetcode.com/u/ManoharEldhandi/" target="_blank" rel="noreferrer">LeetCode · 553+ problems <span>↗</span></a>
-        <a href="https://codeforces.com/profile/ACatLastTry" target="_blank" rel="noreferrer">Codeforces · Expert 1785 <span>↗</span></a>
+        <a href="https://codeforces.com/profile/ACatLastTry" target="_blank" rel="noreferrer">Codeforces · Master 2128 <span>↗</span></a>
         <a href="https://www.codechef.com/users/acatlasttry" target="_blank" rel="noreferrer">CodeChef · 4-star 1893 <span>↗</span></a>
       </div>
     </section>
