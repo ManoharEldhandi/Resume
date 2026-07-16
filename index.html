@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Resume of Manohar Eldhandi, Backend and AI Engineer at Cisco focused on AI-powered automation, backend systems, security compliance, and release reliability." />
+  <meta name="description" content="Resume of Manohar Eldhandi, a software engineer at Cisco building production backend, LLM, and machine-learning systems." />
   <meta name="theme-color" content="#202020" />
   <title>Manohar Eldhandi | Resume</title>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23222222'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='26' font-family='Arial' font-weight='700' fill='%23f97316'%3EM%3C/text%3E%3C/svg%3E" />
@@ -15,11 +15,11 @@
 <body>
   <main class="container">
     <header class="hero">
-      <div class="kicker">Backend &amp; AI Engineer · Cisco · Bengaluru</div>
+      <div class="kicker">Software Engineer · Backend + AI · Cisco · Bengaluru</div>
       <div class="hero-row">
         <div>
           <h1>Manohar Eldhandi</h1>
-          <p class="role">Backend and AI engineer building automation, APIs, and reliability tooling for product teams.</p>
+          <p class="role">Software engineer building production backend, LLM, and machine-learning systems.</p>
         </div>
         <nav class="quick-links" aria-label="Primary links">
           <a href="https://manohareldhandi.github.io/portfolio/" target="_blank" rel="noreferrer">Portfolio <span>↗</span></a>
@@ -29,13 +29,14 @@
       </div>
 
       <p class="summary">
-        I build AI-powered security compliance automation, backend APIs, audit logging, CI/CD
-        validation, and developer productivity tools that reduce manual workflow effort and help
-        product teams ship with more confidence.
+        At Cisco, I build Python backend services, MCP servers, LangGraph/RAG workflows, and
+        release automation. An AI security-compliance platform I helped ship now supports 50+
+        engineers across 4 product teams, cutting manual review effort by 70% and reporting
+        turnaround by 85%.
       </p>
 
       <div class="contact-strip" aria-label="Contact information">
-        <a href="mailto:manohar.eldhandi@outlook.com">manohar.eldhandi@outlook.com</a>
+        <a href="mailto:manohareldhandi@outlook.com">manohareldhandi@outlook.com</a>
         <span>Bengaluru, India</span>
       </div>
     </header>
@@ -51,11 +52,24 @@
           <div class="details">
             <h3>Software Engineer Trainee · Cisco</h3>
             <ul>
-              <li>Shipped an AI-powered security compliance automation tool adopted across 4 major Cisco internal products, reducing manual code review effort by ~70% and compliance reporting time by ~85%.</li>
-              <li>Deployed a Model Context Protocol server connecting internal engineering tools with LLM-based assistants, enabling real-time compliance support for 50+ engineers.</li>
-              <li>Architected LangGraph-based workflows integrating RAG pipelines, prompt engineering, and vector retrieval for automated code and compliance analysis across 10+ releases.</li>
-              <li>Engineered cloud-native REST APIs, MySQL schemas, and structured audit logging pipelines so compliance results remain traceable across product releases.</li>
-              <li>Established Playwright E2E automation for 20+ critical workflows, strengthening CI/CD reliability, reducing regression detection time, and cutting manual QA effort by ~60%.</li>
+              <li>Built an AI security-compliance platform used by 50+ engineers across 4 Cisco products, reducing manual review effort by 70% and reporting time by 85%.</li>
+              <li>Designed a secure Model Context Protocol server and LangGraph/RAG workflows that expose internal engineering tools and compliance context to LLM assistants.</li>
+              <li>Shipped Python backend services, authenticated APIs, vector retrieval, and structured audit pipelines that keep security-review results traceable across product releases.</li>
+              <li>Automated 20+ regression workflows covering 200+ test cases with Playwright and JUnit, cutting manual QA effort by 60% while hardening CI/CD reliability.</li>
+              <li>Delivered across 10+ Agile releases with cross-functional product and security teams, daily code reviews, and documented validation evidence.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div class="meta">
+            <span>Feb 2024 - Jun 2024</span>
+          </div>
+          <div class="details">
+            <h3>DSA Mentor · Smart Interviews</h3>
+            <ul>
+              <li>Guided 150+ students through debugging, optimization, and interview-style problem solving in data structures and algorithms.</li>
+              <li>Helped students improve problem-solving performance by 40% on average and earned Smart Coder top 2% national recognition.</li>
             </ul>
           </div>
         </article>
@@ -70,14 +84,14 @@
           <div class="project-copy">
             <div class="project-head">
               <h3><a href="https://github.com/ManoharEldhandi/OnTheWay" target="_blank" rel="noreferrer">OnTheWay <span>↗</span></a></h3>
-              <span>Java 17 · Spring Boot · Spring Security · MySQL · Flyway · Docker</span>
+              <span>Java 17 · Spring Boot · React/TypeScript · GraphQL · Kafka · Elasticsearch</span>
             </div>
             <p>Route-aware pickup and reservation platform with orders ready exactly when you arrive.</p>
             <ul>
-              <li>Engineered an ETA-synchronization engine that times preparation so orders are ready exactly on arrival, driven by a keyless, pluggable RouteProvider that runs with no API keys.</li>
-              <li>Secured the platform with JWT (validate-before-parse) and BCrypt, ownership-checked authorization, and an order state machine (PLACED &#8594; PREPARING &#8594; READY &#8594; PICKED) with an immutable audit trail.</li>
-              <li>Delivered customer, merchant, and admin dashboards over a Spring Boot modular monolith, with a payment-gateway abstraction (Stripe/Razorpay adapters, webhook verification, refunds) and search across 115 shops / 507 items in 16 verticals.</li>
-              <li>Hardened delivery with Flyway migrations (V1-V8), H2 and Testcontainers tests, a 1,000-user load test, Docker, and GitHub Actions CI.</li>
+              <li>Engineered an ETA-synchronization engine with a pluggable RouteProvider that aligns merchant preparation with the customer's live arrival time.</li>
+              <li>Delivered customer, merchant, and admin workflows with JWT/BCrypt authentication, ownership-checked authorization, order/payment state machines, and immutable audit trails.</li>
+              <li>Built REST and GraphQL APIs, WebSocket updates, Kafka order events, Elasticsearch catalog search, and Stripe/Razorpay payment adapters over MySQL.</li>
+              <li>Validated 115 shops, 507 items, and 16 verticals with Flyway migrations, Docker, Kubernetes, CI, 70+ tests, and a simulated 1,000-user load test.</li>
             </ul>
           </div>
         </article>
@@ -87,14 +101,14 @@
           <div class="project-copy">
             <div class="project-head">
               <h3><a href="https://github.com/ManoharEldhandi/Carivyo-AI" target="_blank" rel="noreferrer">Carivyo-AI <span>↗</span></a></h3>
-              <span>Node.js · LLM Gateway · RAG · Playwright · Python</span>
+              <span>Node.js · LLM Gateway · 5 ATS connectors · Playwright · PDF/DOCX</span>
             </div>
-            <p>Local-first LLM agent for job discovery, scoring, and assisted applications.</p>
+            <p>Privacy-first local LLM product for resume-led job discovery and application workflows.</p>
             <ul>
-              <li>Built an LLM provider gateway with versioned prompts, structured-output validation, and no-fabrication gates over OpenAI and local models.</li>
-              <li>Unified job discovery across 1,000+ company career portals via five ATS connectors (Greenhouse, Lever, Ashby, SmartRecruiters, Workday) and a generic HTML/JSON-LD scanner.</li>
-              <li>Built a durable scan-score-materials pipeline with confidence-calibrated scoring and tailored resume and cover-letter generation.</li>
-              <li>Added Playwright dry-run apply-workers that stop before submit, a CLI, and an observability dashboard for full traceability.</li>
+              <li>Parses text, PDF, and DOCX resumes, supports multiple resume profiles, and rescales job matches when the active profile changes.</li>
+              <li>Scans Greenhouse, Lever, Ashby, SmartRecruiters, Workday, and official HTML career pages, then verifies freshness and explains fit, gaps, and risks.</li>
+              <li>Built an OpenAI/local-compatible LLM gateway with versioned prompts, token budgets, structured-output validation, and no-fabrication checks.</li>
+              <li>Added a durable staged pipeline, observability, Markdown/DOCX/PDF exports, and approved Playwright dry runs that stop before final submission.</li>
             </ul>
           </div>
         </article>
@@ -104,14 +118,14 @@
           <div class="project-copy">
             <div class="project-head">
               <h3><a href="https://github.com/ManoharEldhandi/WaterNet" target="_blank" rel="noreferrer">WaterNet <span>↗</span></a></h3>
-              <span>Django · MySQL · XGBoost · scikit-learn</span>
+              <span>Django · scikit-learn · SQLite/MySQL · CSV export</span>
             </div>
-            <p>Real-time water quality assessment API for potability prediction and traceable ML outputs.</p>
+            <p>Django water-potability platform with deterministic model evaluation and traceable predictions.</p>
             <ul>
-              <li>Built a Django REST ML API that predicts water potability from 9 water-chemistry features: pH, hardness, solids, chloramines, sulfate, conductivity, organic carbon, trihalomethanes, and turbidity.</li>
-              <li>Trained a voting ensemble (Random Forest, SVM, XGBoost) reaching 95%+ accuracy and 0.96 AUC on a 3,000+ sample dataset, storing model scores in MySQL for traceability.</li>
-              <li>Served 1,000+ inference requests at sub-50 ms through REST endpoints for real-time JSON input and batch CSV upload, supporting single-record and bulk workflows.</li>
-              <li>Handled preprocessing, feature engineering, model training, API integration, request handling, database persistence, and result management across the ML lifecycle.</li>
+              <li>Classifies water samples from 9 chemistry inputs and evaluates six scikit-learn models with a deterministic train/test split.</li>
+              <li>Serves a cached voting ensemble of logistic regression, random forest, and gradient boosting while retaining model scores and predictions for traceability.</li>
+              <li>Modernized authentication with hashed passwords and legacy upgrades, validated sample submission, and SQLite by default with optional MySQL.</li>
+              <li>Added CSV export and tests covering authentication, model scoring, prediction, provider ratios, training output, submission, and export.</li>
             </ul>
           </div>
         </article>
@@ -127,7 +141,7 @@
             <h3>AI Engineering</h3>
             <p>Design tool-connected AI workflows with retrieval, prompt boundaries, MCP integrations, and backend-facing LLM support for engineering teams.</p>
             <div class="skill-tags">
-              <span>LangChain</span><span>LangGraph</span><span>MCP Server</span><span>RAG</span><span>Vector databases</span><span>Prompt engineering</span><span>LLM integrations</span>
+              <span>LLM APIs</span><span>LangGraph</span><span>LangChain</span><span>MCP</span><span>RAG</span><span>Vector retrieval</span><span>Prompt engineering</span><span>Agentic workflows</span>
             </div>
           </div>
         </article>
@@ -138,7 +152,7 @@
             <h3>Backend Systems</h3>
             <p>Build secure service layers, REST APIs, data models, and auditable flows that can be tested, reviewed, and extended cleanly.</p>
             <div class="skill-tags">
-              <span>Python</span><span>Java</span><span>SQL</span><span>Spring Boot</span><span>Django</span><span>FastAPI</span><span>REST APIs</span><span>JWT</span><span>OAuth 2.0</span><span>RBAC</span><span>MySQL</span>
+              <span>Python</span><span>Java</span><span>Node.js</span><span>SQL</span><span>Spring Boot</span><span>Spring Security</span><span>Django</span><span>REST APIs</span><span>GraphQL</span><span>JWT</span><span>MySQL</span><span>WebSockets</span>
             </div>
           </div>
         </article>
@@ -149,7 +163,7 @@
             <h3>Machine Learning</h3>
             <p>Handle practical ML pipelines from preprocessing and feature engineering to model comparison, evaluation, and inference integration.</p>
             <div class="skill-tags">
-              <span>scikit-learn</span><span>XGBoost</span><span>TensorFlow</span><span>NLP</span><span>Feature engineering</span><span>Model evaluation</span><span>Generative AI</span>
+              <span>scikit-learn</span><span>XGBoost</span><span>TensorFlow</span><span>Pandas</span><span>NumPy</span><span>NLP</span><span>Feature engineering</span><span>Model evaluation</span>
             </div>
           </div>
         </article>
@@ -160,7 +174,7 @@
             <h3>Reliability &amp; Tools</h3>
             <p>Use tests, observability, infrastructure tooling, and release automation to keep systems traceable and regression-safe.</p>
             <div class="skill-tags">
-              <span>Playwright</span><span>JUnit</span><span>API testing</span><span>Docker</span><span>Linux</span><span>GitHub Actions</span><span>CI/CD</span><span>AWS</span><span>GCP</span>
+              <span>Playwright</span><span>JUnit 5</span><span>API testing</span><span>Docker</span><span>Kubernetes</span><span>Linux</span><span>GitHub Actions</span><span>CI/CD</span><span>Git</span><span>AWS</span>
             </div>
           </div>
         </article>
@@ -210,7 +224,7 @@
           <span class="achievement-rank">05</span>
           <div>
             <strong>Codeforces</strong>
-            <p>Reached Master with rating 2128; ranked 252 out of 24,000+ in a Division 2 contest.</p>
+            <p>Reached Master with a current rating of 2141; ranked 252 out of 24,000+ in a Division 2 contest.</p>
           </div>
           <a href="https://codeforces.com/profile/ACatLastTry" target="_blank" rel="noreferrer">Profile <span>↗</span></a>
         </article>
@@ -219,13 +233,22 @@
           <span class="achievement-rank">06</span>
           <div>
             <strong>CodeChef</strong>
-            <p>Reached 4-star with rating 1893; ranked 13 out of 25,000+ in Starters 147D and reached global rank 2649.</p>
+            <p>Reached 4-star with rating 1893 and ranked 13 out of 25,000+ in CodeChef Starters 147.</p>
           </div>
           <a href="https://www.codechef.com/users/acatlasttry" target="_blank" rel="noreferrer">Profile <span>↗</span></a>
         </article>
 
         <article class="achievement-row">
           <span class="achievement-rank">07</span>
+          <div>
+            <strong>LER_DSA · Open Source</strong>
+            <p>Published an MIT-licensed 30-day Java interview roadmap with fundamentals, 20 topic modules, reusable templates, progress tracking, revision rules, and clean documentation.</p>
+          </div>
+          <a href="https://github.com/ManoharEldhandi/LER_DSA" target="_blank" rel="noreferrer">Repository <span>↗</span></a>
+        </article>
+
+        <article class="achievement-row">
+          <span class="achievement-rank">08</span>
           <div>
             <strong>Certifications</strong>
             <p>Earned OCI 2025 Generative AI Professional, OCI AI Foundations, AWS Cloud Foundations, AWS ML Foundations, HackerRank Problem Solving, and related AI/data credentials.</p>
@@ -241,7 +264,7 @@
         <article class="entry compact">
           <div class="meta">
             <span>Dec 2021 - Jul 2025</span>
-            <span>CGPA 8.48</span>
+            <span>CGPA 8.5 / 10</span>
           </div>
           <div class="details">
             <h3>B.Tech · Computer Science and Engineering, AI & ML</h3>
@@ -254,8 +277,8 @@
     <section class="section">
       <h2 data-symbol="@">Profiles</h2>
       <div class="section-body profile-links">
-        <a href="https://leetcode.com/u/ManoharEldhandi/" target="_blank" rel="noreferrer">LeetCode · 553+ problems <span>↗</span></a>
-        <a href="https://codeforces.com/profile/ACatLastTry" target="_blank" rel="noreferrer">Codeforces · Master 2128 <span>↗</span></a>
+        <a href="https://leetcode.com/u/ManoharEldhandi/" target="_blank" rel="noreferrer">LeetCode · Problem-solving profile <span>↗</span></a>
+        <a href="https://codeforces.com/profile/ACatLastTry" target="_blank" rel="noreferrer">Codeforces · Master 2141 <span>↗</span></a>
         <a href="https://www.codechef.com/users/acatlasttry" target="_blank" rel="noreferrer">CodeChef · 4-star 1893 <span>↗</span></a>
       </div>
     </section>
